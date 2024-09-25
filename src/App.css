@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+  position: relative;
+  width: 800px;
+  height: auto;
+  border: solid black 1px;
+  margin: 0 auto auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-left {
+  position: relative;
+  width: 200px;
+  font-style: italic;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-right {
+  position: relative;
+  width: 550px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 210px;
+  border-bottom: solid orange 5px;
+  background-color: lightgray;
+}
+
+.name-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0;
+  left: 10px;
+}
+.name-container p {
+  padding: 0;
+  margin: 0 15px 0;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-container {
+  position: absolute;
+  right: 15px;
+}
+.contact-container ul {
+  list-style-type: none;
+}
+.contact-container ul li {
+  font-size: small;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 15px;
+border-bottom: solid gray 2px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+  border-bottom: solid gray 2px;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+  border-bottom: solid gray 2px;
+}
+.skills-column-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.skills-column-container ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+}
+.education-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.education-container ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
