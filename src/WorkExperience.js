@@ -1,9 +1,6 @@
 import { Component } from "react";
 
 class WorkExperience extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div class="experience-container">

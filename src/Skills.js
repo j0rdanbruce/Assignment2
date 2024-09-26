@@ -14,9 +14,6 @@ const SkillsColumn = (props) => {
 }
 
 class Skills extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div class="skills-container">
